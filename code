@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: rgb(5, 5, 4);
+            color: rgb(253, 253, 253);
+            background-image: url('background.jpg');
+            background-size: 100%;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background-color: rgb(68, 78, 68);
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        nav ul li a:hover {
+            color: rgb(251, 6, 6);
+        }
+        
+        .left {
+            font-size: 1.5rem;
+        }
+        
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 23px 0;
+        }
+        
+        .firstsection>div {
+            width: 30%;
+        }
+        
+        .leftsection {
+            font-size: 40px;
+            margin: 100px 0;
+            text-align: end;
+        }
+        
+        .rightsection img {
+            width: 50%;
+            margin: 50px 0;
+            border-radius: 50%;
+        }
+        
+        .secondsection h1 {
+            padding-left: 30px;
+            margin: 200px;
+        }
+        
+        .aboutme h1 {
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">home</li></a>
+                        <li><a href="/">about</li></a>
+                            <li><a href="/">education</li></a>
+                                <li><a href="/">skills</li></a>
+                                    <li><a href="/">projects</li></a>
+                                        <li><a href="/">contact</li></a>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <section class="firstsection">
+            <div class="leftsection">
+                <span id="element"></span>
+                <script>
+                    var typed = new Typed('#element', {
+                        strings: ["Hii! <br>I'am saami<br>A computer science student"],
+                        typeSpeed: 50,
+                    });
+                </script>
+            </div>
+            <div class="rightsection">
+                <img src="back.jpg" alt="">
+            </div>
+        </section>
+        <section class="about">
+            <div class="aboutme">
+                <h1>about me</h1>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
